@@ -1,0 +1,31 @@
+# SPDX-License-Identifier: MIT
+# Örnek ağ geçidi (agecidi) için Python araçları: kitap boyunca geliştirilen paket.
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sensor-araclari"
+version = "0.3.0"
+description = "Endüstriyel sensör ağ geçidi için ölçüm, protokol ve raporlama araçları"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Örnek Geliştirici", email = "gelistirici@ornek.com" }]
+dependencies = [
+    "pyserial>=3.5",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+sensor-rapor = "sensor_araclari.cli:main"
+sensor-istemci = "sensor_araclari.istemci:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

@@ -1,0 +1,5 @@
+tmp/
+cache/
+bitbake-cookerdaemon.log
+bitbake.lock
+bitbake.sock

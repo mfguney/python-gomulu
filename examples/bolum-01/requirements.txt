@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT
+# sensor-araclari geliştirme ortamının sabitlenmiş hali (Bölüm 1.7).
+# Üretim: python -m pip freeze --exclude-editable > requirements.txt  (Python 3.12.3, Ubuntu 24.04)
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+Pygments==2.21.0
+pyserial==3.5
+pytest==9.2.0

@@ -1,0 +1,10 @@
+zaman,sensor,deger,birim
+2026-11-02T10:00:01,sensor0,21.4,C
+2026-11-02T10:00:01,sensor1,19.0,C
+2026-11-02T10:00:06,sensor0,21.8,C
+2026-11-02T10:00:06,sensor1,19.2,C
+# 10:00:11 okuması bakım nedeniyle atlandı
+2026-11-02T10:00:16,sensor0,22.6,C
+2026-11-02T10:00:16,sensor1,19.1,C
+2026-11-02T10:00:21,sensor0,31.2,C
+2026-11-02T10:00:21,sensor1,19.5,C

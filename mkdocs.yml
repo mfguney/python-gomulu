@@ -1,0 +1,120 @@
+# Gömülü Geliştirici için Python — Gömülü Linux Kitaplığı
+site_name: Gömülü Geliştirici için Python
+site_description: >-
+  Python dilini otomasyon, test, donanım iletişimi ve BitBake metadata'sı bağlamında anlatan açık kaynak Türkçe kitap.
+site_author: Gömülü Linux Kitaplığı katkıcıları
+site_url: https://mfguney.github.io/python-gomulu/
+# Çevrimiçi ve çevrimdışı kullanımda bağlantıların aynı kalması için .html uzantılı adresler kullanılır
+use_directory_urls: false
+repo_url: https://github.com/mfguney/python-gomulu
+repo_name: python-gomulu
+edit_uri: edit/main/docs/
+copyright: >-
+  Metin <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.tr">CC BY-SA 4.0</a>,
+  örnek kodlar MIT lisanslıdır. Gömülü Linux Kitaplığı'nın bir parçasıdır.
+
+theme:
+  name: material
+  language: tr
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Karanlık temaya geç
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Aydınlık temaya geç
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.tooltips
+    - toc.follow
+
+extra_css:
+  - stylesheets/kitap.css
+
+extra_javascript:
+  - javascripts/senaryolar.js
+  - javascripts/quiz.js
+  - javascripts/akis-motor.js
+  - javascripts/terminal.js
+
+plugins:
+  - search:
+      lang: tr
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Bu başlığa bağlantı
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets:
+      auto_append:
+        - includes/kisaltmalar.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Başlangıç:
+      - index.md
+      - Kitabın kullanımı: nasil-okunur.md
+  - Bölümler:
+      - "1 · Python ortamı: yorumlayıcı, venv ve pip": bolumler/01-python-ortami.md
+      - "2 · Dil temelleri: türler, ifadeler, akış denetimi": bolumler/02-dil-temelleri.md
+      - "3 · Veri yapıları: liste, sözlük, küme, demet": bolumler/03-veri-yapilari.md
+      - "4 · Fonksiyonlar, modüller, paketler ve sınıflar": bolumler/04-fonksiyon-modul.md
+      - "5 · Dosyalar, süreçler ve komut satırı araçları": bolumler/05-sistem-programlama.md
+      - "6 · Hata yönetimi, test ve günlük kaydı": bolumler/06-hata-test-kayit.md
+      - "7 · Donanımla iletişim: ikili veri, seri port, soketler": bolumler/07-donanim-iletisim.md
+      - "8 · BitBake ve Yocto'da Python": bolumler/08-bitbake-python.md
+  - Etkileşimli araçlar:
+      - Animasyonlu şemalar: araclar/animasyonlar.md
+  - Ekler:
+      - Terimler sözlüğü: ekler/sozluk.md
+      - Komut özeti: ekler/komut-ozeti.md
+      - Kaynakça ve ileri okuma: ekler/kaynakca.md
